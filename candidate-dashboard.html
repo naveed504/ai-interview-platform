@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidate Dashboard · ABACUS AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar">
+    <div class="brand">
+      <div class="mark">AX</div>
+      <div class="name">ABACUS AI<span>Candidate Portal</span></div>
+    </div>
+    <div class="side-section-label">Main Menu</div>
+    <ul class="side-nav">
+      <li><a href="candidate-dashboard.html" class="active"><i class="bi bi-grid-1x2"></i><span>Dashboard</span></a></li>
+<li><a href="profile-setup.html" class=""><i class="bi bi-person-badge"></i><span>My Profile</span></a></li>
+<li><a href="kyc-verification.html" class=""><i class="bi bi-shield-check"></i><span>KYC Verification</span></a></li>
+<!-- <li><a href="skill-test.html" class=""><i class="bi bi-patch-question"></i><span>Skill Test</span></a></li> -->
+<li><a href="check-skill-set.html" class=""><i class="bi bi-patch-question"></i><span>Skill Test</span></a></li>
+<li><a href="jobs-browse.html" class=""><i class="bi bi-briefcase"></i><span>Browse Jobs</span></a></li>
+<li><a href="applications.html" class=""><i class="bi bi-kanban"></i><span>My Applications</span></a></li>
+<li><a href="membership.html" class=""><i class="bi bi-gem"></i><span>Membership Pro</span></a></li>
+
+    </ul>
+    <div class="side-section-label">Account</div>
+    <ul class="side-nav">
+      <li><a href="login.html"><i class="bi bi-box-arrow-right"></i><span>Sign Out</span></a></li>
+    </ul>
+    <div class="side-user">
+      <img src="https://i.pravatar.cc/80?img=47" alt="">
+      <div>
+        <div class="avatar-name" style="font-size:.85rem;">Aisha Raheem</div>
+        <div class="role-tag">Candidate</div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-backdrop"></div>
+    <div class="main-col">
+      <header class="topbar">
+      <button class="topbar-icon-btn d-lg-none" data-toggle="sidebar"><i class="bi bi-list"></i></button>
+      <div class="search-box d-none d-md-flex">
+        <i class="bi bi-search"></i>
+        <span>Search jobs, applications…</span>
+      </div>
+      <div class="ms-auto d-flex align-items-center gap-2">
+        <button class="topbar-icon-btn"><i class="bi bi-moon-stars"></i></button>
+        <button class="topbar-icon-btn"><i class="bi bi-bell"></i><span class="dot"></span></button>
+        <div class="dropdown">
+          <button class="avatar-btn dropdown-toggle" data-bs-toggle="dropdown">
+            <img src="assets/img/naveed.jpg" alt="">
+            <span class="d-none d-sm-inline" style="font-size:.85rem; font-weight:600;">Account</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+      <main class="page-wrap">
+        <div class="breadcrumb-soft"><a href="candidate-dashboard.html">Home</a> <i class="bi bi-chevron-right mx-1" style="font-size:.6rem;"></i> Dashboard</div>
+        <div class="page-head">
+          <div><h1>Your Dashboard</h1><p class="text-muted-soft mb-0">Track applications, badges and upcoming interviews.</p></div>
+        </div>
+        
+<div class="row g-4 mb-4">
+  <div class="col-12 col-lg-8">
+    <div class="card-panel" style="background:linear-gradient(120deg, rgba(205,166,83,.14), rgba(255,255,255,.03));">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          <div class="badge-pill badge-gold mb-2"><i class="bi bi-stars"></i> Identity Verified</div>
+          <h3 class="font-display fw-bold mb-1">Welcome back, Aisha</h3>
+          <p class="text-muted-soft mb-0">You're 80% of the way to a Talent Verified badge — finish the skill test to unlock priority ranking.</p>
+        </div>
+        <a href="skill-test.html" class="btn btn-gold">Take Skill Test</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-lg-4">
+    <div class="card-panel h-100">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted-soft small">Profile strength</span>
+        <span class="text-gold fw-bold">80%</span>
+      </div>
+      <div class="progress-slim mb-3"><div class="bar" style="width:80%;"></div></div>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="trust-badge active"><i class="bi bi-patch-check-fill"></i> Identity Verified</span>
+        <span class="trust-badge"><i class="bi bi-award"></i> Talent Verified</span>
+        <span class="trust-badge"><i class="bi bi-gem"></i> Membership Pro</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-4 mb-4">
+  <div class="col-6 col-lg-3"><div class="card-panel kpi-card card-panel-hover"><div class="kpi-icon"><i class="bi bi-send-check"></i></div><div class="kpi-value">14</div><div class="kpi-label">Applications sent</div></div></div>
+  <div class="col-6 col-lg-3"><div class="card-panel kpi-card card-panel-hover"><div class="kpi-icon"><i class="bi bi-calendar2-check"></i></div><div class="kpi-value">3</div><div class="kpi-label">Interviews scheduled</div></div></div>
+  <div class="col-6 col-lg-3"><div class="card-panel kpi-card card-panel-hover"><div class="kpi-icon"><i class="bi bi-trophy"></i></div><div class="kpi-value">2</div><div class="kpi-label">Shortlisted</div></div></div>
+  <div class="col-6 col-lg-3"><div class="card-panel kpi-card card-panel-hover"><div class="kpi-icon"><i class="bi bi-graph-up-arrow"></i></div><div class="kpi-value">87</div><div class="kpi-label">Avg. match score</div></div></div>
+</div>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-7">
+    <div class="card-panel">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="font-display fw-bold mb-0">Recent applications</h5>
+        <a href="applications.html" class="small">View all</a>
+      </div>
+      <table class="table-elegant">
+        <thead><tr><th>Role</th><th>Company</th><th>Status</th><th>Match</th></tr></thead>
+        <tbody>
+          <tr><td><div class="avatar-name">Senior Laravel Developer</div><div class="avatar-sub">Applied Sep 2</div></td><td>Nexora Tech</td><td><span class="badge-pill badge-warning">Interview Scheduled</span></td><td class="text-gold fw-bold">92%</td></tr>
+          <tr><td><div class="avatar-name">Product Designer</div><div class="avatar-sub">Applied Aug 28</div></td><td>Bramble Labs</td><td><span class="badge-pill badge-cyan">Under Review</span></td><td class="text-gold fw-bold">81%</td></tr>
+          <tr><td><div class="avatar-name">React Frontend Engineer</div><div class="avatar-sub">Applied Aug 20</div></td><td>Quanta Systems</td><td><span class="badge-pill badge-success">Shortlisted</span></td><td class="text-gold fw-bold">88%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-12 col-lg-5">
+    <div class="card-panel">
+      <h5 class="font-display fw-bold mb-3">Upcoming AI interview</h5>
+      <div class="d-flex gap-3 align-items-center mb-3">
+        <div class="kpi-icon" style="margin-bottom:0;"><i class="bi bi-camera-video"></i></div>
+        <div>
+          <div class="avatar-name">Senior Laravel Developer</div>
+          <div class="avatar-sub">Nexora Tech · Wed, Sep 10 · 3:30 PM</div>
+        </div>
+      </div>
+      <p class="text-muted-soft small">Make sure you're in a quiet, well-lit room with a stable connection. The session takes about 20 minutes.</p>
+      <a href="interview-start.html" class="btn btn-gold w-100">Enter Interview Room</a>
+    </div>
+  </div>
+</div>
+
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  
+</body>
+</html>

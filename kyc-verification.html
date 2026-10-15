@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYC Verification · ABACUS AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="mark">AX</div>
+      <div class="name">ABACUS AI<span>Candidate Portal</span></div>
+    </div>
+    <div class="side-section-label">Main Menu</div>
+    <ul class="side-nav">
+      <li><a href="candidate-dashboard.html" class=""><i class="bi bi-grid-1x2"></i><span>Dashboard</span></a></li>
+<li><a href="profile-setup.html" class=""><i class="bi bi-person-badge"></i><span>My Profile</span></a></li>
+<li><a href="kyc-verification.html" class="active"><i class="bi bi-shield-check"></i><span>KYC Verification</span></a></li>
+<li><a href="skill-test.html" class=""><i class="bi bi-patch-question"></i><span>Skill Test</span></a></li>
+<li><a href="jobs-browse.html" class=""><i class="bi bi-briefcase"></i><span>Browse Jobs</span></a></li>
+<li><a href="applications.html" class=""><i class="bi bi-kanban"></i><span>My Applications</span></a></li>
+<li><a href="membership.html" class=""><i class="bi bi-gem"></i><span>Membership Pro</span></a></li>
+
+    </ul>
+    <div class="side-section-label">Account</div>
+    <ul class="side-nav">
+      <li><a href="login.html"><i class="bi bi-box-arrow-right"></i><span>Sign Out</span></a></li>
+    </ul>
+    <div class="side-user">
+      <img src="https://i.pravatar.cc/80?img=47" alt="">
+      <div>
+        <div class="avatar-name" style="font-size:.85rem;">Aisha Raheem</div>
+        <div class="role-tag">Candidate</div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-backdrop"></div>
+  <div class="main-col">
+    <header class="topbar">
+      <button class="topbar-icon-btn d-lg-none" data-toggle="sidebar"><i class="bi bi-list"></i></button>
+      <div class="search-box d-none d-md-flex">
+        <i class="bi bi-search"></i>
+        <span>Search…</span>
+      </div>
+      <div class="ms-auto d-flex align-items-center gap-2">
+        <button class="topbar-icon-btn"><i class="bi bi-moon-stars"></i></button>
+        <button class="topbar-icon-btn"><i class="bi bi-bell"></i><span class="dot"></span></button>
+        <div class="dropdown">
+          <button class="avatar-btn dropdown-toggle" data-bs-toggle="dropdown">
+            <img src="assets/img/naveed.jpg" alt="">
+            <span class="d-none d-sm-inline" style="font-size:.85rem; font-weight:600;">Account</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="page-wrap" style="max-width:820px;">
+      <div class="breadcrumb-soft"><a href="candidate-dashboard.html">Home</a> <i class="bi bi-chevron-right mx-1" style="font-size:.6rem;"></i> KYC Verification</div>
+      <div class="page-head"><div><h1>Identity Verification (KYC)</h1><p class="text-muted-soft mb-0">Unlocks your Identity Verified badge and standard job applications.</p></div></div>
+
+      <form data-step-form data-complete-redirect="candidate-dashboard.html">
+        <div class="card-panel mb-4">
+          <div class="stepper-top mb-2">
+            <div class="step-item"><div class="step-line"></div><div class="circle">1</div><div class="label">ID Document</div></div>
+            <div class="step-item"><div class="step-line"></div><div class="circle">2</div><div class="label">Live Selfie</div></div>
+            <div class="step-item"><div class="step-line"></div><div class="circle">3</div><div class="label">Result</div></div>
+          </div>
+          <div class="progress-slim mt-3"><div class="bar" style="width:0%;"></div></div>
+        </div>
+
+        <div class="card-panel step-pane">
+          <h5 class="font-display fw-bold mb-1">Upload a government ID</h5>
+          <p class="text-muted-soft small mb-4">Passport, national ID card, or driving license. Make sure all four corners are visible.</p>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="upload-drop"><input type="file" class="d-none"><i class="bi bi-credit-card-2-front d-block"></i><div class="fw-semibold mt-2">Front side</div><div class="file-name text-gold small mt-2 fw-semibold"></div></div>
+            </div>
+            <div class="col-md-6">
+              <div class="upload-drop"><input type="file" class="d-none"><i class="bi bi-credit-card-2-back d-block"></i><div class="fw-semibold mt-2">Back side</div><div class="file-name text-gold small mt-2 fw-semibold"></div></div>
+            </div>
+          </div>
+          <div class="form-check mt-4">
+            <input class="form-check-input" type="checkbox" id="kycConsent" checked>
+            <label class="form-check-label" for="kycConsent">I consent to my ID document being used solely for identity verification, stored encrypted per platform policy.</label>
+          </div>
+        </div>
+
+        <div class="card-panel step-pane d-none text-center">
+          <h5 class="font-display fw-bold mb-1">Live selfie check</h5>
+          <p class="text-muted-soft small mb-4">Position your face inside the frame in good lighting.</p>
+          <div class="camera-frame mx-auto mb-3" style="max-width:420px;">
+            <div class="scan-corner tl"></div><div class="scan-corner tr"></div><div class="scan-corner bl"></div><div class="scan-corner br"></div>
+            <div class="cam-hint"><i class="bi bi-camera-video"></i>Camera preview appears here</div>
+          </div>
+          <button type="button" class="btn btn-outline-gold"><i class="bi bi-camera me-2"></i>Capture Selfie</button>
+        </div>
+
+        <div class="card-panel step-pane d-none text-center py-5">
+          <div class="mb-3" style="font-size:3.4rem; color:#4ade8e;"><i class="bi bi-patch-check-fill"></i></div>
+          <h4 class="font-display fw-bold mb-2">Identity Verified</h4>
+          <p class="text-muted-soft mb-4" style="max-width:420px; margin:0 auto;">Your ID and selfie matched successfully. The "Identity Verified" badge is now active on your profile.</p>
+          <span class="badge-pill badge-gold"><i class="bi bi-patch-check-fill"></i> Identity Verified badge unlocked</span>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+          <button type="button" class="btn btn-outline-light" data-step-prev>Back</button>
+          <button type="button" class="btn btn-gold" data-step-next data-final-label="Go to Dashboard">Continue</button>
+        </div>
+      </form>
+    </main>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  
+</body>
+</html>

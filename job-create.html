@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Job · ABACUS AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar">
+    <div class="brand">
+      <div class="mark">AX</div>
+      <div class="name">ABACUS AI<span>HR Workspace</span></div>
+    </div>
+    <div class="side-section-label">Main Menu</div>
+    <ul class="side-nav">
+      <li><a href="hr-dashboard.html" class=""><i class="bi bi-grid-1x2"></i><span>Dashboard</span></a></li>
+<li><a href="job-create.html" class="active"><i class="bi bi-plus-square"></i><span>Create Job</span></a></li>
+<li><a href="job-postings.html" class=""><i class="bi bi-briefcase"></i><span>Job Postings</span></a></li>
+<li><a href="question-bank.html" class=""><i class="bi bi-journal-text"></i><span>Question Bank</span></a></li>
+<li><a href="ats-screening.html" class=""><i class="bi bi-radar"></i><span>ATS Screening</span></a></li>
+<li><a href="invite-candidates.html" class=""><i class="bi bi-send"></i><span>Contact & Invite</span></a></li>
+<li><a href="schedule-interview.html" class=""><i class="bi bi-calendar2-week"></i><span>Schedule Interviews</span></a></li>
+<li><a href="interview-results.html" class=""><i class="bi bi-mic"></i><span>Interview Results</span></a></li>
+<li><a href="analytics.html" class=""><i class="bi bi-bar-chart-line"></i><span>Analytics</span></a></li>
+
+    </ul>
+    <div class="side-section-label">Account</div>
+    <ul class="side-nav">
+      <li><a href="login.html"><i class="bi bi-box-arrow-right"></i><span>Sign Out</span></a></li>
+    </ul>
+    <div class="side-user">
+      <img src="assets/img/naveed.jpg" alt="">
+      <div>
+        <div class="avatar-name" style="font-size:.85rem;">M Naveed</div>
+        <div class="role-tag">HR Manager · Nexora Tech</div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-backdrop"></div>
+    <div class="main-col">
+      <header class="topbar">
+      <button class="topbar-icon-btn d-lg-none" data-toggle="sidebar"><i class="bi bi-list"></i></button>
+      <div class="search-box d-none d-md-flex">
+        <i class="bi bi-search"></i>
+        <span>Search candidates, jobs, questions…</span>
+      </div>
+      <div class="ms-auto d-flex align-items-center gap-2">
+        <button class="topbar-icon-btn"><i class="bi bi-moon-stars"></i></button>
+        <button class="topbar-icon-btn"><i class="bi bi-bell"></i><span class="dot"></span></button>
+        <div class="dropdown">
+          <button class="avatar-btn dropdown-toggle" data-bs-toggle="dropdown">
+            <img src="assets/img/naveed.jpg" alt="">
+            <span class="d-none d-sm-inline" style="font-size:.85rem; font-weight:600;">Account</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+      <main class="page-wrap">
+        <div class="breadcrumb-soft"><a href="hr-dashboard.html">Home</a> <i class="bi bi-chevron-right mx-1" style="font-size:.6rem;"></i> Create Job</div>
+        <div class="page-head">
+          <div><h1>Create a Job Posting</h1><p class="text-muted-soft mb-0">Define the role, then choose how the AI interview will source its questions.</p></div>
+        </div>
+        
+<div class="row g-4">
+  <div class="col-lg-8">
+    <div class="card-panel mb-4">
+      <h5 class="font-display fw-bold mb-3">Job details</h5>
+      <div class="row g-3">
+        <div class="col-md-8"><label class="form-label">Job title</label><input class="form-control" value="Senior Laravel Developer"></div>
+        <div class="col-md-4"><label class="form-label">Employment type</label><select class="form-select"><option>Full-time</option><option>Contract</option><option>Part-time</option></select></div>
+        <div class="col-md-6"><label class="form-label">Location</label><input class="form-control" value="Lahore, Pakistan"></div>
+        <div class="col-md-6"><label class="form-label">Work mode</label><select class="form-select"><option>Hybrid</option><option>Remote</option><option>On-site</option></select></div>
+        <div class="col-md-6"><label class="form-label">Salary range (min)</label><input class="form-control" value="$2,400"></div>
+        <div class="col-md-6"><label class="form-label">Salary range (max)</label><input class="form-control" value="$3,200"></div>
+        <div class="col-12"><label class="form-label">Job description</label><textarea class="form-control" rows="5">We're looking for a Senior Laravel Developer to lead backend architecture for our merchant payments platform...</textarea></div>
+        <div class="col-12"><label class="form-label">Requirements</label><textarea class="form-control" rows="3">5+ years Laravel/PHP, strong MySQL, event-driven architecture experience.</textarea></div>
+      </div>
+    </div>
+
+    <div class="card-panel mb-4">
+      <h5 class="font-display fw-bold mb-1">AI interview question source</h5>
+      <p class="text-muted-soft small mb-3">Choose how the AI interviewer builds its question set for this role.</p>
+      <div class="d-grid gap-2 mb-4">
+        <label class="chip-choice selected"><input type="radio" name="qsource" checked> <span><strong>Fully AI-generated</strong> — created live from resume + job description</span></label>
+        <label class="chip-choice"><input type="radio" name="qsource"> <span><strong>Blended</strong> — mix your question bank with AI-generated questions</span></label>
+      </div>
+      <div class="card-panel tight" style="background:rgba(255,255,255,.03);">
+        <label class="form-label">Blend ratio</label>
+        <div class="d-flex justify-content-between text-muted-soft small mb-1"><span>Question bank</span><span id="blendOut" class="text-gold fw-bold">40%</span><span>AI-generated</span></div>
+        <input type="range" class="form-range" min="0" max="100" value="40" data-live-label="#blendOut">
+        <label class="form-label mt-3">Select question set</label>
+        <select class="form-select"><option>Laravel Developer — Core</option><option>Java Backend v2</option></select>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card-panel mb-4">
+      <h6 class="fw-bold mb-3">Publishing</h6>
+      <div class="mb-3"><label class="form-label">Visibility</label><select class="form-select"><option>Public listing</option><option>Private / Membership Pro only</option></select></div>
+      <div class="mb-3"><label class="form-label">Application deadline</label><input type="date" class="form-control" value="2026-09-25"></div>
+      <div class="form-check mb-3"><input class="form-check-input" type="checkbox" checked id="autoScreen"><label class="form-check-label" for="autoScreen">Auto-run AI resume screening after deadline</label></div>
+      <a href="job-postings.html" class="btn btn-gold w-100 mb-2">Publish Job</a>
+      <button class="btn btn-ghost w-100 btn-sm">Save as Draft</button>
+    </div>
+    <div class="card-panel">
+      <div class="d-flex gap-2"><i class="bi bi-magic text-gold mt-1"></i><div class="text-muted-soft small">AI will use this description to generate live interview questions and score resume matches once candidates apply.</div></div>
+    </div>
+  </div>
+</div>
+
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Interviews · ABACUS AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar">
+    <div class="brand">
+      <div class="mark">AX</div>
+      <div class="name">ABACUS AI<span>HR Workspace</span></div>
+    </div>
+    <div class="side-section-label">Main Menu</div>
+    <ul class="side-nav">
+      <li><a href="hr-dashboard.html" class=""><i class="bi bi-grid-1x2"></i><span>Dashboard</span></a></li>
+<li><a href="job-create.html" class=""><i class="bi bi-plus-square"></i><span>Create Job</span></a></li>
+<li><a href="job-postings.html" class=""><i class="bi bi-briefcase"></i><span>Job Postings</span></a></li>
+<li><a href="question-bank.html" class=""><i class="bi bi-journal-text"></i><span>Question Bank</span></a></li>
+<li><a href="ats-screening.html" class=""><i class="bi bi-radar"></i><span>ATS Screening</span></a></li>
+<li><a href="invite-candidates.html" class=""><i class="bi bi-send"></i><span>Contact & Invite</span></a></li>
+<li><a href="schedule-interview.html" class="active"><i class="bi bi-calendar2-week"></i><span>Schedule Interviews</span></a></li>
+<li><a href="interview-results.html" class=""><i class="bi bi-mic"></i><span>Interview Results</span></a></li>
+<li><a href="analytics.html" class=""><i class="bi bi-bar-chart-line"></i><span>Analytics</span></a></li>
+
+    </ul>
+    <div class="side-section-label">Account</div>
+    <ul class="side-nav">
+      <li><a href="login.html"><i class="bi bi-box-arrow-right"></i><span>Sign Out</span></a></li>
+    </ul>
+    <div class="side-user">
+      <img src="assets/img/naveed.jpg" alt="">
+      <div>
+        <div class="avatar-name" style="font-size:.85rem;">M Naveed</div>
+        <div class="role-tag">HR Manager · Nexora Tech</div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-backdrop"></div>
+    <div class="main-col">
+      <header class="topbar">
+      <button class="topbar-icon-btn d-lg-none" data-toggle="sidebar"><i class="bi bi-list"></i></button>
+      <div class="search-box d-none d-md-flex">
+        <i class="bi bi-search"></i>
+        <span>Search candidates, jobs, questions…</span>
+      </div>
+      <div class="ms-auto d-flex align-items-center gap-2">
+        <button class="topbar-icon-btn"><i class="bi bi-moon-stars"></i></button>
+        <button class="topbar-icon-btn"><i class="bi bi-bell"></i><span class="dot"></span></button>
+        <div class="dropdown">
+          <button class="avatar-btn dropdown-toggle" data-bs-toggle="dropdown">
+            <img src="assets/img/naveed.jpg" alt="">
+            <span class="d-none d-sm-inline" style="font-size:.85rem; font-weight:600;">Account</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+      <main class="page-wrap">
+        <div class="breadcrumb-soft"><a href="hr-dashboard.html">Home</a> <i class="bi bi-chevron-right mx-1" style="font-size:.6rem;"></i> Schedule Interviews</div>
+        <div class="page-head">
+          <div><h1>Schedule AI Interviews</h1><p class="text-muted-soft mb-0">Set an interview window — slots and unique links are generated automatically.</p></div>
+        </div>
+        
+<div class="row g-4">
+  <div class="col-lg-5">
+    <div class="card-panel">
+      <h6 class="fw-bold mb-3">Interview window</h6>
+      <div class="row g-3 mb-3">
+        <div class="col-6"><label class="form-label">Start date</label><input type="date" class="form-control" value="2026-09-10"></div>
+        <div class="col-6"><label class="form-label">End date</label><input type="date" class="form-control" value="2026-09-16"></div>
+      </div>
+      <div class="mb-3"><label class="form-label">Interviews per day</label><input type="number" class="form-control" value="8"></div>
+      <div class="mb-3"><label class="form-label">Daily window</label>
+        <div class="d-flex gap-2"><input type="time" class="form-control" value="10:00"><input type="time" class="form-control" value="17:00"></div>
+      </div>
+      <div class="mb-4"><label class="form-label">Slot duration</label><select class="form-select"><option>20 minutes</option><option>30 minutes</option></select></div>
+      <button class="btn btn-gold w-100"><i class="bi bi-magic me-2"></i>Auto-Generate Slots</button>
+      <p class="text-muted-soft small mt-3 mb-0">The system will create individual time slots and email a unique interview link to each invited candidate automatically.</p>
+    </div>
+  </div>
+  <div class="col-lg-7">
+    <div class="card-panel">
+      <h6 class="fw-bold mb-3">Generated schedule — Sep 10</h6>
+      <table class="table-elegant">
+        <thead><tr><th>Time</th><th>Candidate</th><th>Link Status</th></tr></thead>
+        <tbody>
+          <tr><td>10:00 AM</td><td><div class="avatar-name">Bilal Ahmed</div></td><td><span class="badge-pill badge-success">Sent</span></td></tr>
+          <tr><td>10:30 AM</td><td><div class="avatar-name">Mahnoor Sheikh</div></td><td><span class="badge-pill badge-success">Sent</span></td></tr>
+          <tr><td>11:00 AM</td><td><div class="avatar-name">Usman Chaudhry</div></td><td><span class="badge-pill badge-warning">Pending</span></td></tr>
+          <tr><td>11:30 AM</td><td><div class="avatar-name">Sara Nadeem</div></td><td><span class="badge-pill badge-warning">Pending</span></td></tr>
+          <tr><td>1:00 PM</td><td><div class="avatar-name">Hamza Tariq</div></td><td><span class="badge-pill badge-warning">Pending</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  
+</body>
+</html>
